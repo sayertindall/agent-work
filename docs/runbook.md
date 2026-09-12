@@ -109,6 +109,12 @@ If a choice is unclear, ask:
 
 The [principle index](../skills/steady/references/principle-index.md) supplies the routing. This is instruction-driven loading; it is not a runtime hook that guarantees compliance.
 
+## Name what the work does
+
+The naming rule applies to every artifact, including quick fixes. Use `verify-access-token.ts`, not a filename based on a task number. Keep task references in plan metadata and prose. Workers receive the same rule.
+
+The agent checks names before commit and reports the naming gate result and its coverage limits. A clean mechanical check does not excuse a name that only makes sense inside the current conversation. See the [gate guide](naming-gate.md) for checks and project adoption.
+
 ## Review and deliver
 
 For code changes, the workflow uses `git dft` for inspection alongside the configured Open Code Review CLI. The agent checks OCR findings against the source and reports incomplete coverage. Strict no-write or offline requests may require local inspection instead.

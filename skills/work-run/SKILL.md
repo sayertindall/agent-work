@@ -11,6 +11,8 @@ As the single coordinator, establish a branch/worktree or clone appropriate to t
 
 Before concurrent work, retries, or a changed design decision, revisit the [principle index](../steady/references/principle-index.md) and read the applicable guidance before acting. Include relevant reference paths and section names in worker assignments; workers read them themselves.
 
+Apply [naming and code quality rules](../steady/references/rules.md) before introducing artifacts. Before commit and completion, inspect new names and run the project naming gate on the relevant snapshot; report failures and coverage limits.
+
 Execute to the plan's full acceptance criteria. Keep decisions and evidence in the plan at meaningful checkpoints, not after every tool call. If new evidence invalidates scope or design, record it and resolve the decision rather than implement the wrong plan. Continue independent authorized work while a real blocker remains.
 
 Before selecting final checks or declaring completion, read [outcome proof](../steady/references/delivery-principles.md#prove-the-outcome) and, when tests are involved, [behavior tests](../steady/references/delivery-principles.md#test-behavior), unless already in context. Inspect artifacts and run relevant checks on the integrated result. A worker's success, opened PR, or green CI is not the plan's completion by itself. Use [work-sync](../work-sync/SKILL.md) to reconcile evidence and state. If the outcome requires a merge or operational result outside current authorization, prepare the concrete result and ask only for that remaining action.

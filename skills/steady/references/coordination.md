@@ -4,6 +4,8 @@ Use one coordinating agent for an active plan and one writer for the shared work
 
 Delegate a bounded task only when independent work can progress or an independent assessment is useful. Check the live host tools, available roles, and session restrictions. Read the matching [host adapter](../../../adapters/README.md) when mechanics are needed. Keep ordinary work in the current session when delegation is unavailable or uneconomical. If independent review is required but unavailable, record the unmet gate.
 
+Every worker assignment carries the rule: name the domain, never the local task, phase, agent, or execution history. Include the [rules reference](rules.md); workers read it before introducing names.
+
 Give each worker the outcome, exact repository and baseline, owned paths, allowed actions, acceptance criteria, and a return format: artifact locations, observed checks, unresolved concerns. Include applicable [principle references](principle-index.md) and section names; workers read the definitions before affected decisions and revisit selection when evidence changes. Do not assume parent context transfers. Tell workers they are not alone and must preserve others' changes. Concurrent writers get separate worktrees or clones and unique outputs. Isolate runtime state too when sockets, ports, databases, or caches could collide.
 
 Workers complete their assignment directly; nested delegation requires an explicit coordinating assignment. Workers return evidence to the coordinator rather than editing the shared plan index. Model and effort selection follows current host configuration or explicit user instruction.
