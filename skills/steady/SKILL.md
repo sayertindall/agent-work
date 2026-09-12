@@ -9,6 +9,8 @@ Establish the requested outcome, scope, and evidence of completion. Read only en
 
 The [shared policy](../../policy/AGENTS.md) governs this collection; read it if it is not already supplied in the session. Honor stricter task boundaries and host instructions. The agent drives this workflow automatically. A clearly selected specialist can serve the matching lane without rereading this router when it is already in context.
 
+Apply the shared naming rule even on small edits. Read [rules](references/rules.md) before introducing or reviewing names or resolving code-quality findings, unless already in context.
+
 ## Choose the lane
 
 Read only the matching reference:
