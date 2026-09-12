@@ -126,5 +126,13 @@
     "allowed_effects": "missing setup only",
     "expected": "Preserve all existing content and create only missing setup.",
     "forbidden": "Replace README or plans with a fresh template."
+  },
+  {
+    "id": "automatic-workflow",
+    "request": "Implement this multi-file feature and verify it. No skill names or work-directory path are supplied.",
+    "entry": "steady/implement",
+    "allowed_effects": "authorized implementation, verification, and durable work tracking",
+    "expected": "Apply Steady automatically; resolve the project or configured work root; use work-init script when structure is missing; create or resume a plan and execute to acceptance.",
+    "forbidden": "Wait for manual work skill calls, use a competing workflow, or guess a different work root instead of following precedence."
   }
 ]

@@ -1,6 +1,6 @@
 ---
 name: work-plan
-description: "Prepare a durable work plan with scope, decisions, dependencies, and acceptance criteria when the user requests execution planning."
+description: "Prepare or refine the durable plan for substantive authorized work, including scope, decisions, dependencies, and acceptance criteria."
 ---
 
 # Prepare a plan

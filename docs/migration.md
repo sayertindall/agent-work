@@ -14,7 +14,7 @@ Verify the backup by reading selected originals and retained copies and comparin
 
 Review the exact replacement set. Retire overlapping legacy workflow triggers and the old pstack startup mandate for the selected hosts. Preserve app-specific capabilities and useful project instructions. Reconcile genuine global preferences into the shared policy without restoring the conflicts identified in the audit.
 
-Choose one discovery route per host using [the adapters](../adapters/README.md). Preserve the repository layout for cross-skill references. Do not install into every known root. Update only the reviewed paths; record each change for rollback. Restart or open a fresh session when necessary to refresh discovery.
+Confirm the default work directory and install the shared policy's required-Steady rule. Choose one discovery route per host using [the adapters](../adapters/README.md). Preserve the repository layout for cross-skill references. Do not install into every known root. Update only the reviewed paths; record each change for rollback. Restart or open a fresh session when necessary to refresh discovery.
 
 ## Accept or restore
 

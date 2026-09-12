@@ -7,7 +7,7 @@ description: "Choose and complete a proportionate workflow for substantial engin
 
 Establish the requested outcome, scope, and evidence of completion. Read only enough context to choose the next useful action. Carry authorized work through verification and repair. These are responsibilities, not a mandatory visible checklist.
 
-The [shared policy](../../policy/AGENTS.md) governs this collection; read it if it is not already supplied in the session. Honor stricter task boundaries and host instructions. A clearly selected specialist can run without entering this router.
+The [shared policy](../../policy/AGENTS.md) governs this collection; read it if it is not already supplied in the session. Honor stricter task boundaries and host instructions. The agent drives this workflow automatically. A clearly selected specialist can serve the matching lane without rereading this router when it is already in context.
 
 ## Choose the lane
 
@@ -22,11 +22,13 @@ Read only the matching reference:
 | Assess existing work | [Review](references/review.md) |
 | Release or change an operational system | [Operate](references/operate.md) |
 
-Work locally for bounded tasks. Use [work-plan](../work-plan/SKILL.md) and [work-run](../work-run/SKILL.md) when the user wants durable plans or the authorized work needs cross-session ownership, dependencies, or delegation. Do not create records during a no-write task.
+For substantive authorized changes or multi-session execution, locate the work directory using the shared policy's precedence. Use [work-init](../work-init/SKILL.md) to check it and scaffold missing structure through its script. Create or resume an actionable plan with [work-plan](../work-plan/SKILL.md), execute with [work-run](../work-run/SKILL.md), and reconcile with [work-sync](../work-sync/SKILL.md). Do not wait for the user to invoke each skill. Record clear existing decisions directly; do not invent an interview or approval gate for an actionable task.
+
+Simple answers and self-evident small edits need no durable records. Informational, proposal-only, and no-write tasks stay within their requested mode; the required workflow never authorizes record creation against those boundaries.
 
 ## Apply judgment
 
-Use a brief plan only when sequencing or uncertainty benefits from one. Investigate before choosing a fix. Explore alternatives when a consequential decision remains open, not every time a function boundary is crossed. Use a script when repetition or reproducibility warrants it. Avoid introducing infrastructure merely to satisfy a workflow.
+Keep the required plan proportionate to the work. Add sequencing detail when it helps; do not duplicate the durable record in a ceremonial visible checklist. Investigate before choosing a fix. Explore alternatives when a consequential decision remains open, not every time a function boundary is crossed. Use a script when repetition or reproducibility warrants it. Avoid introducing infrastructure merely to satisfy a workflow.
 
 When a design decision needs more guidance, read [design principles](references/design-principles.md). For proof, integration, or retry decisions, read [delivery principles](references/delivery-principles.md). Principles inform choices; they are not separate skills or required citations.
 

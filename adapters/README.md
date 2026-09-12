@@ -23,3 +23,7 @@ At activation, inspect each host's actual discovered inventory. Directory conten
 Use the current session for coordination. Optional roles are worker, reviewer, and researcher; an existing explorer can handle narrow read-only discovery. The host may use different names. Choose a suitable configured role, not a hardcoded provider. Pass outcome, baseline, ownership, allowed actions, acceptance, and required returned evidence.
 
 If a tool or independent reviewer is unavailable, say so. Continue useful local work when allowed, but do not label a self-review independent or promise unavailable scheduling.
+
+## Activate the required workflow
+
+Reconcile the shared policy into each host's global instruction file. Preserve its required-Steady entry rule and work-directory resolution order. Confirm the configured default work directory during installation. Retire conflicting legacy workflow hooks so Steady is the sole general workflow. Test an ordinary substantive action request without naming any skill: the agent should locate/scaffold the work directory and create or resume a plan automatically. No-write and informational requests must remain non-mutating.

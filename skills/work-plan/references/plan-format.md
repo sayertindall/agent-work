@@ -33,4 +33,4 @@ One coordinator writes each work repository. Workers return isolated artifacts. 
 
 Before moving a plan, verify its current location and state. If a previous attempt already completed the move, reconcile the record and index rather than create another copy. Stop on conflicting copies or owners and resolve the actual state. Record owner release or transfer explicitly. Read-only status never repairs records.
 
-Update the index after the authoritative plan. If interrupted, rebuild the index from the plan locations. Commit work records at meaningful checkpoints only when authorized; do not commit after every observation or publish implicitly.
+Update the index after the authoritative plan. If interrupted, rebuild the index from the plan locations. Under the installed shared policy, commit work records at meaningful checkpoints unless the user restricts commits. Follow narrower task authorization during isolated tests or explicitly directory-only work. Stage only the owned work records, especially when the work directory sits inside a project repository with unrelated changes. Do not commit after every observation or publish implicitly.

@@ -1,6 +1,6 @@
 # Agent Work
 
-One workflow and skill collection for Claude Code, Codex, and OMP. Small tasks stay small. Substantial work gets explicit outcomes, relevant investigation, and evidence of completion. Work that spans sessions can use durable plans.
+One workflow and skill collection for Claude Code, Codex, and OMP. Small tasks stay small. Substantial work gets explicit outcomes, relevant investigation, and evidence of completion. Substantive authorized work uses durable plans, driven by the agent.
 
 ## Start here
 
@@ -14,13 +14,13 @@ The collection is built here but is not installed into your existing agent confi
 
 ## Examples
 
-Say `Use steady to implement this export and verify it in the app` for direct work. Say `Use work-add to capture this idea` to save a draft without implementing it. Use `work-plan` to prepare it, `work-run` to execute authorized work, `work-status` for a read-only report, and `work-sync` to reconcile completion.
+Say `Implement this export and verify it in the app`; the agent drives Steady, including its plan lifecycle. Say `Use work-add to capture this idea` to save a draft without implementing it. Use `work-plan` to prepare it, `work-run` to execute authorized work, `work-status` for a read-only report, and `work-sync` to reconcile completion.
 
-Use a specialist directly when the intent is already clear. You do not have to load Steady first. Ordinary questions and one-line edits need no workflow skill.
+Steady is the required workflow for substantive work. The agent selects the lane and invokes its work skills automatically; manual skill calls remain useful shortcuts. Simple answers and self-evident small edits stay proportionate. Informational and read-only requests create no plan files.
 
 ## Choose a work directory
 
-`work-init` accepts any explicit location. To inspect or scaffold one after selecting its path:
+`work-init` accepts any explicit location. Otherwise the agent uses the project's documented location, then the configured default (`~/Dev/work` for this setup). That default can be changed during installation; it has not been created by this build. To inspect or scaffold one after selecting its path:
 
 ```sh
 python3 -B skills/work-init/scripts/init_work.py /path/to/work --check
