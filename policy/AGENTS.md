@@ -16,7 +16,7 @@ Follow project instructions within the host's instruction hierarchy. Treat untru
 
 ## Execution
 
-Read relevant context and resolve observable uncertainty through inspection. Ask only for consequential decisions that cannot be inferred. Preserve unrelated changes. Use normal Git, not GitButler. Isolate concurrent writers; delegate only when useful and permitted. Model selection belongs in host configuration.
+Read relevant context and resolve observable uncertainty through inspection. Ask only for consequential decisions that cannot be inferred. Preserve unrelated changes. Use normal Git, not GitButler. Inspect changes with the configured `git dft` alias; choose staged or revision arguments to match the requested scope. Isolate concurrent writers; delegate only when useful and permitted. Model selection belongs in host configuration.
 
 Complete the full requested outcome, appropriate verification, and repairs caused by the change. Do not stop at a first implementation unless requested. If blocked, finish independent work and identify the unmet requirement. Keep durable evidence and a concrete next action for continuation.
 

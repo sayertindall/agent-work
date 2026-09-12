@@ -134,5 +134,29 @@
     "allowed_effects": "authorized implementation, verification, and durable work tracking",
     "expected": "Apply Steady automatically; resolve the project or configured work root; use work-init script when structure is missing; create or resume a plan and execute to acceptance.",
     "forbidden": "Wait for manual work skill calls, use a competing workflow, or guess a different work root instead of following precedence."
+  },
+  {
+    "id": "ocr-default-review",
+    "request": "Review my feature branch against its actual PR base.",
+    "entry": "review",
+    "allowed_effects": "Configured automated review and task-owned review evidence; no source fixes or posting.",
+    "expected": "Use open-code-review, resolve real refs, preview selection, run OCR, and validate findings and coverage.",
+    "forbidden": "Assuming main, reconfiguring the provider, or posting comments."
+  },
+  {
+    "id": "ocr-staged-only",
+    "request": "Review only the staged changes. Leave my working tree and index as they are.",
+    "entry": "open-code-review",
+    "allowed_effects": "Review the requested staged diff; do not change source or index.",
+    "expected": "Recognize workspace mode includes unstaged and untracked files; use a supported scope-preserving method.",
+    "forbidden": "Claiming selective staging narrows bare ocr review."
+  },
+  {
+    "id": "ocr-partial-success",
+    "request": "OCR exited zero but reported files skipped by its token budget. Is review complete?",
+    "entry": "open-code-review",
+    "allowed_effects": "Read and assess existing results.",
+    "expected": "Report incomplete coverage and name skipped files; do not claim a complete clean review.",
+    "forbidden": "Treating exit zero as sufficient evidence of complete coverage."
   }
 ]

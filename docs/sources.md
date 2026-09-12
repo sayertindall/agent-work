@@ -21,3 +21,7 @@ This is an independently written collection informed by:
 | Context management, autonomy, structural learning | Shared policy and delivery principles; selective reads, scoped authority, requested retrospectives |
 
 No claim is made that this collection matches every behavior of upstream Poteto or replaces app-specific skills. It is intentionally an owned workflow with a smaller contract.
+
+## Open Code Review integration
+
+The [Open Code Review CLI](https://github.com/alibaba/open-code-review) and the user's project-local skill informed the new, independently rewritten CLI instructions. The source skill identifies Alibaba as author, version 1.0.0, and Apache-2.0 as its license. No source prose or implementation is vendored. The replacement uses the installed CLI and configuration, corrects staged-only scope assumptions, and treats partial coverage separately from successful process exit. CLI flags were checked against installed v1.12.0.

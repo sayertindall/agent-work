@@ -6,11 +6,11 @@ One workflow and skill collection for Claude Code, Codex, and OMP. Small tasks s
 
 - [Shared policy](policy/AGENTS.md) defines scope, authorization, and completion.
 - [Steady](skills/steady/SKILL.md) selects a workflow when one is useful.
-- [Catalog](CATALOG.md) lists the sixteen skills and their boundaries.
+- [Catalog](CATALOG.md) lists the seventeen skills and their boundaries.
 - [Host setup](adapters/README.md) explains how to expose the same source in each host.
 - [Validation](docs/validation.md) separates structural checks, scenario evaluation, and live-host acceptance.
 
-The collection is built here but is not installed into your existing agent configuration. Existing skills, plugins, hooks, and global instructions have not been replaced. Backup and activation are a separate stage described in [migration](docs/migration.md).
+The collection is built here but is not installed into your existing agent configuration. The project-local Open Code Review skill has moved into this collection. Other existing skills, plugins, hooks, and global instructions have not been replaced. Backup and activation are a separate stage described in [migration](docs/migration.md).
 
 ## Examples
 

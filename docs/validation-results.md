@@ -2,7 +2,7 @@
 
 Repository creation and evaluation date: September 12, 2026.
 
-The collection has sixteen skills and a shared policy. The workflow is named Steady. No live agent configuration has been installed or replaced.
+The initial collection had sixteen skills and a shared policy. The workflow is named Steady. No live agent configuration has been installed or replaced.
 
 ## Evidence under evaluation
 
@@ -27,3 +27,11 @@ Codex: not installed; authoring and independent evaluation occur in this host, w
 OMP: not installed or exercised in a fresh session.
 
 These checks belong to the subsequent backup and activation stage.
+
+## Open Code Review and Difftastic integration
+
+Added the seventeenth skill, `open-code-review`, and connected it to the shared review contract. The agent uses the existing `git dft` alias alongside OCR. Installed OCR v1.12.0 help confirmed the documented flags; its configured provider was not changed or called for this integration.
+
+The collection validator and all 7 validator regression tests passed after the addition. A disposable Git fixture confirmed that `git dft --cached` selects staged changes only, while `ocr review --preview --audience agent` selects staged, unstaged, and untracked files. Preview did not perform an LLM review.
+
+Author walkthroughs covered default branch review, staged-only scope, and partial results despite exit zero. The instructions resolve the actual branch baseline, reject widening a staged-only request, and leave skipped coverage incomplete. These are author assessments, not independent agent evaluations. Live discovery in all three hosts and a full provider-backed OCR review remain untested.

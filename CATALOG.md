@@ -15,6 +15,7 @@ Use one entry point for the actual request. The following are canonical names, n
 | [architecture](skills/architecture/SKILL.md) | Consequential design decisions | No compulsory redesign or implementation |
 | [debug](skills/debug/SKILL.md) | Causal diagnosis | Repair only when requested |
 | [review](skills/review/SKILL.md) | Bounded artifact assessment | No unsolicited fixes |
+| [open-code-review](skills/open-code-review/SKILL.md) | Configured OCR diff review | Preserve diff scope; validate findings and coverage |
 | [research](skills/research/SKILL.md) | Attributable external evidence | No automatic report files or installs |
 | [interface](skills/interface/SKILL.md) | UI design, implementation, review | Preserve requested mode and project language |
 | [writing](skills/writing/SKILL.md) | Writing as a deliverable | Drafting is not sending |

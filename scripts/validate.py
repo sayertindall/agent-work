@@ -14,7 +14,7 @@ def validate(root):
     expected = {
         'steady', 'work-init', 'work-add', 'work-plan', 'work-run',
         'work-status', 'work-sync', 'work-retro', 'architecture', 'debug',
-        'review', 'research', 'interface', 'writing', 'security', 'performance',
+        'review', 'open-code-review', 'research', 'interface', 'writing', 'security', 'performance',
     }
     total_description_words = 0
     skill_paths = sorted((root / 'skills').glob('*/SKILL.md'))

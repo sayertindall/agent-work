@@ -1,6 +1,6 @@
 # Design decisions
 
-The system has sixteen discoverable skills. Seven manage durable work, Steady selects the execution lane, and eight cover distinct specialist decisions. The shared policy is installed once per host. Principles are read on demand, not advertised as separate skills.
+The system has seventeen discoverable skills. Seven manage durable work, Steady selects the execution lane, and nine cover specialist decisions and the configured review CLI. The shared policy is installed once per host. Principles are read on demand, not advertised as separate skills.
 
 This retains pstack's emphasis on simple structures, real evidence, root causes, consumer experience, and accountable delegation. It removes mandatory principle citations, automatic panel reviews, fixed prototype quotas, automatic external actions, and workflow-triggered PR creation.
 
