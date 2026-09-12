@@ -1,0 +1,11 @@
+usage: fixture-cli [-h] {list,show} ...
+
+Inspect the small public record fixture.
+
+positional arguments:
+  {list,show}
+    list       List available record IDs.
+    show       Show one record by ID.
+
+options:
+  -h, --help   show this help message and exit
