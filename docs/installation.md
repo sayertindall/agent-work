@@ -16,11 +16,29 @@ Shared policy was installed in each host's global instruction file. Claude's exi
 
 These checks validate discovery and configuration. They do not establish full behavioral acceptance across all three models. Existing conversations can retain old context; restart the hosts or begin fresh sessions before using the new workflow.
 
-## Activating principle routing after review
+## Update all three agents
 
-The shared policy source directs agents to Steady's principle index. Specialist skills also route at relevant decisions, including direct entry without the router. All three hosts use the same Markdown references; no host hook, model setting, or new discoverable skill is needed. This is instruction-driven loading, whose timing requires behavioral evaluation.
+After choosing the revision in the canonical checkout, run this from any directory:
 
-Development in an isolated worktree does not update the installed skills. After review and a separately authorized merge/installation, update the canonical checkout and synchronize `policy/AGENTS.md` into each host's installed global instruction file, preserving host-specific preferences and the canonical source pointer. Those policy files are copies, so a Git update alone does not refresh them. The existing skill links then expose the canonical references. Begin fresh sessions and verify selective loading in each host before claiming cross-host behavioral acceptance.
+```sh
+python3 -B ~/Dev/agent-work/scripts/update_agents.py
+```
+
+Check whether synchronization is needed without writing anything:
+
+```sh
+python3 -B ~/Dev/agent-work/scripts/update_agents.py --check
+```
+
+The script validates the source, synchronizes the three global instruction files, and checks or updates the shared skill, policy, and adapter links. It preserves host-specific text after the managed source pointer and existing file permissions. It backs up changed files and previous link targets under `~/.skills-archive/updates/` and rolls back attempted replacements if a write fails. Repeating a successful update changes nothing and creates no additional backup.
+
+A receipt at `~/.agents/agent-work-install.json` records the installed policy hashes. Local edits inside a managed policy block cause refusal rather than silent replacement. Keep personal preferences after the Installed collection pointer. A matching older installation can be adopted without a receipt; an unknown layout or changed managed text needs reconciliation first. Existing skill directories are never replaced automatically. Updates use a process lock; do not edit instruction files concurrently.
+
+`--source /path/to/agent-work` selects another complete checkout. `--home /path/to/disposable-home` supports isolated tests. `--check` exits 0 when current, 1 when an update is needed, and 2 on invalid source or a conflict. A normal successful update exits 0.
+
+This command synchronizes the selected checkout. It does not fetch, switch branches, merge, install parser dependencies, change models, restore old plugins, alter project hooks, or configure required CI checks. The naming parser setup remains `npm ci --ignore-scripts` in that checkout when dependencies need installation. The original full-stack archive and its `latest` pointer remain untouched.
+
+The shared policy directs agents to Steady's principle index and always-loaded naming rule. All three hosts use the same Markdown references. Start fresh sessions after an update; synchronization does not replace instructions already loaded in an active conversation or establish behavioral acceptance by itself.
 
 ## Archive and restore
 

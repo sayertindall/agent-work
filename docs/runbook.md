@@ -2,7 +2,7 @@
 
 Use this guide to drive work in Claude Code, Codex, or OMP. Give the agent an outcome, useful context, and clear limits. Steady handles the workflow and selects the skills. You do not need to invoke each step yourself.
 
-This guide describes the workflow in this repository. After updating skills, follow [installation and activation](installation.md) and start a fresh session. Shared policy files are installed separately from the skill links.
+This guide describes the workflow in this repository. After updating skills, follow [installation and activation](installation.md) and start a fresh session. Run `python3 -B ~/Dev/agent-work/scripts/update_agents.py` after choosing the desired checkout revision. It synchronizes the policy copies and skill links for all three agents.
 
 ## Start a task
 
