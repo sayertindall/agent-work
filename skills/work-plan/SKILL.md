@@ -9,6 +9,8 @@ Read [plan format](references/plan-format.md) and use [the template](assets/plan
 
 Before the first record edit, establish that you are the single coordinator writing this work repository. If another coordinator owns it, return the proposed update to that owner; do not edit a competing copy.
 
+Before choosing structure or scope, use the [principle index](../steady/references/principle-index.md) to load guidance for the actual open decision. Record consequential choices and supporting evidence in this plan; skip a separate principle checklist.
+
 Define the outcome, exclusions, completion artifact, and checks that demonstrate acceptance. Resolve consequential uncertainties through authorized inspection. Use [architecture](../architecture/SKILL.md), [research](../research/SKILL.md), or [interface](../interface/SKILL.md) only when those questions arise. Do not require every implementation detail to be decided.
 
 Record dependencies and the authorization actually supplied. Readiness is technical; it does not grant execution permission. Keep unresolved product choices or missing acceptance criteria in `drafts/`. When the plan is actionable, move it to `ready/` and update the index as its single writer. Blocked prerequisites may remain declared dependencies, but must be satisfied before execution starts.

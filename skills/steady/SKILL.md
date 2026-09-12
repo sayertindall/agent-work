@@ -30,7 +30,7 @@ Simple answers and self-evident small edits need no durable records. Information
 
 Keep the required plan proportionate to the work. Add sequencing detail when it helps; do not duplicate the durable record in a ceremonial visible checklist. Investigate before choosing a fix. Explore alternatives when a consequential decision remains open, not every time a function boundary is crossed. Use a script when repetition or reproducibility warrants it. Avoid introducing infrastructure merely to satisfy a workflow.
 
-When a design decision needs more guidance, read [design principles](references/design-principles.md). For proof, integration, or retry decisions, read [delivery principles](references/delivery-principles.md). Principles inform choices; they are not separate skills or required citations.
+Before a consequential choice, consult the [principle index](references/principle-index.md) and read the selected sections before acting. Apply the same routing when entering a specialist directly. Revisit selection when evidence changes, repeated fixes fail, work becomes concurrent, or retry and completion decisions arise. Guidance already read in the current context need not be reread unless it changes. Principles inform choices; they are not separate skills or required citations.
 
 Delegation is optional. Read [coordination](references/coordination.md) only when using workers or handing off. Keep scope and authorization with the coordinating agent.
 

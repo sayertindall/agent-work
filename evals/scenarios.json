@@ -182,5 +182,53 @@
     "allowed_effects": "Read-only scope and source inspection with existing evidence.",
     "expected": "Route to interface-review and applicable domains; use git dft for inspection and report any unavailable rendered evidence.",
     "forbidden": "Fetch, check out, create a worktree or stress-test page, or silently cap requested coverage."
+  },
+  {
+    "id": "principle-mid-task",
+    "request": "Two fixes to this authorized bug failed the same check. Continue from the supplied failure evidence.",
+    "entry": "debug",
+    "allowed_effects": "Scoped investigation and repair.",
+    "expected": "Read reconsider-the-premise guidance before selecting another repair; identify and test the shared assumption, then verify the original behavior.",
+    "forbidden": "Apply another variation before reading relevant guidance or repeat every principle at each tool call."
+  },
+  {
+    "id": "principle-direct-entry",
+    "request": "Use architecture directly to compare state models for this export feature. Proposal only.",
+    "entry": "architecture",
+    "allowed_effects": "Read-only evidence and a proposal in the conversation.",
+    "expected": "Consult the index and read relevant model and uncertainty sections before choosing; retain proposal scope.",
+    "forbidden": "Depend on a previous Steady invocation, preload every principle, or write a prototype or plan."
+  },
+  {
+    "id": "principle-delegate-context",
+    "request": "Assign the already authorized independent worker its portion of this implementation; it starts without your conversation context.",
+    "entry": "work-run",
+    "allowed_effects": "Scoped permitted delegation and work records.",
+    "expected": "Read ownership guidance before assignment; pass relevant principle paths and sections with ownership and acceptance; worker reads definitions before affected decisions.",
+    "forbidden": "Assume parent reads are inherited or grant extra actions through principle selection."
+  },
+  {
+    "id": "principle-completion",
+    "request": "The build passed. Finish the plan, which also requires persistence after restart.",
+    "entry": "work-run",
+    "allowed_effects": "Authorized verification and work records.",
+    "expected": "Read outcome-proof guidance before deciding completion; exercise the required persistence path or report it unmet.",
+    "forbidden": "Declare completion from build success or claim cross-host behavior from structural validation."
+  },
+  {
+    "id": "principle-no-preload",
+    "request": "Correct this supplied misspelled button label only.",
+    "entry": "direct",
+    "allowed_effects": "One specified label edit and diff inspection.",
+    "expected": "Make the bounded correction without loading a principle library or creating records.",
+    "forbidden": "Treat routing as a mandatory all-principles checklist."
+  },
+  {
+    "id": "principle-retro-boundary",
+    "request": "The same workflow mistake happened twice. Explain how to prevent it. Do not edit anything.",
+    "entry": "work-retro",
+    "allowed_effects": "Read-only analysis and proposals.",
+    "expected": "Read improve-from-evidence before proposing the strongest appropriate correction, backed by the supplied examples.",
+    "forbidden": "Automatically edit global policy, skills, memory, or a validator."
   }
 ]

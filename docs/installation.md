@@ -16,6 +16,12 @@ Shared policy was installed in each host's global instruction file. Claude's exi
 
 These checks validate discovery and configuration. They do not establish full behavioral acceptance across all three models. Existing conversations can retain old context; restart the hosts or begin fresh sessions before using the new workflow.
 
+## Activating principle routing after review
+
+The shared policy source directs agents to Steady's principle index. Specialist skills also route at relevant decisions, including direct entry without the router. All three hosts use the same Markdown references; no host hook, model setting, or new discoverable skill is needed. This is instruction-driven loading, whose timing requires behavioral evaluation.
+
+Development in an isolated worktree does not update the installed skills. After review and a separately authorized merge/installation, update the canonical checkout and synchronize `policy/AGENTS.md` into each host's installed global instruction file, preserving host-specific preferences and the canonical source pointer. Those policy files are copies, so a Git update alone does not refresh them. The existing skill links then expose the canonical references. Begin fresh sessions and verify selective loading in each host before claiming cross-host behavioral acceptance.
+
 ## Archive and restore
 
 The archive is `~/.skills-archive/20260912T173619Z`; `~/.skills-archive/latest` points to it. It includes 6,171 regular files, 70 symlinks, plugin packages and install records, relevant settings, and snapshots of external linked skill targets. Twenty skill links were already broken; their missing content could not be recovered and is identified in the manifest.

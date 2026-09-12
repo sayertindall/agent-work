@@ -11,6 +11,8 @@ Inspect Git changes with the user's `git dft` command (Difftastic). Use `git dft
 
 For Git code diffs, use [open-code-review](../open-code-review/SKILL.md) as the default automated review pass unless the user selects another method or task constraints prohibit it. Validate its findings yourself. For non-code artifacts, use direct assessment.
 
+Before assessing maintainability or test adequacy, use the [principle index](../steady/references/principle-index.md) to read reader-effort or behavior-test guidance as applicable. Principles support evidence-backed findings, not preference-only objections.
+
 Prioritize defects with a concrete trigger and observable impact. Check correctness, compatibility, failure handling, and maintainability where relevant. Separate introduced defects, regressions, and pre-existing issues. Prefer evidence to style preferences. Load [security](../security/SKILL.md) or [interface](../interface/SKILL.md) only when that review surface is requested or material.
 
 Use read-only inspection when required; tests can write caches or fixtures. Do not fix a finding during a review-only request. Report each actionable finding with severity, location, trigger, consequence, and supporting evidence. Report coverage and unverified surfaces even when no findings remain.

@@ -2,7 +2,7 @@
 
 ## Required workflow
 
-Steady is the standard workflow for substantive work in Claude Code, Codex, and OMP. Load its entrypoint when beginning or resuming such work unless it is already in context. Drive the workflow yourself; the user supplies the outcome, not a sequence of skill commands. Specialists serve the selected lane rather than replace it with competing procedures.
+Steady is the standard workflow for substantive work in Claude Code, Codex, and OMP. Load its entrypoint when beginning or resuming such work unless it is already in context. Drive the workflow yourself; the user supplies the outcome, not a sequence of skill commands. Specialists serve the selected lane rather than replace it with competing procedures. Before a consequential decision, use Steady's principle index and read the relevant guidance before acting. Revisit selection when evidence changes; load only what applies. Principles cannot expand authority.
 
 Substantive authorized changes and multi-session execution use a durable plan. Locate the work directory from the user's explicit path, then project instructions, then the configured host default. The default for this setup is `~/Dev/work`; installation may change it. Inspect or scaffold it through work-init's script, create or resume the plan, execute, verify, and synchronize the result. New standalone work roots are Git-backed unless the user requests directory-only tracking. Commit work records at meaningful checkpoints; pushing still requires authorization. Simple answers and self-evident small edits need no plan files.
 
