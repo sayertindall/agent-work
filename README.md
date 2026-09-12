@@ -4,6 +4,7 @@ One workflow and skill collection for Claude Code, Codex, and OMP. Small tasks s
 
 ## Start here
 
+- [Runbook](docs/runbook.md) shows how to start, steer, review, and hand off agent work.
 - [Shared policy](policy/AGENTS.md) defines scope, authorization, and completion.
 - [Steady](skills/steady/SKILL.md) selects a workflow when one is useful.
 - [Catalog](CATALOG.md) lists the seventeen skills and their boundaries.
