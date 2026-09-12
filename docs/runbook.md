@@ -113,7 +113,7 @@ The [principle index](../skills/steady/references/principle-index.md) supplies t
 
 The naming rule applies to every artifact, including quick fixes. Use `verify-access-token.ts`, not a filename based on a task number. Keep task references in plan metadata and prose. Workers receive the same rule.
 
-The agent checks names before commit and reports the naming gate result and its coverage limits. A clean mechanical check does not excuse a name that only makes sense inside the current conversation. See the [gate guide](naming-gate.md) for checks and project adoption.
+Before commit, inspect new names in the actual change. Report any name that still depends on task context and any artifact the review could not assess. Project-specific linters remain relevant to their established contracts.
 
 ## Review and deliver
 

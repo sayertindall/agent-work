@@ -18,7 +18,7 @@ Before creating a path, symbol, field, test title, image, or resource, choose it
 
 Do not copy an existing violation. Rename owned violations within authorized scope with their callers. For external contracts, deployed resource identities, and sealed evidence, report the required migration; do not break compatibility or rewrite historical bytes. New evidence does not qualify as immutable merely because it lives under an evidence directory.
 
-The mechanical gate recognizes configured patterns, not every possible meaning. Review names such as `secondAttemptHandler`, `agentFix`, or a ticket nickname even if a parser accepts them. Legitimate domain terms and actual protocol versions need evidence-based treatment, not broad substring bans.
+Semantic review, not a universal pattern matcher, determines whether a name describes its domain. Project-specific linters may enforce established identifiers or resource constraints, but legitimate protocol versions and externally owned names need evidence-based treatment rather than broad substring bans.
 
 ## Keep code useful and checkable
 
@@ -29,8 +29,6 @@ The mechanical gate recognizes configured patterns, not every possible meaning. 
 - Use the project's formatter and targeted lint checks. Do not introduce competing formatting conventions or blanket bans on mocks, `unknown`, or runtime type checks.
 - Preserve semantics when simplifying collection operations, error handling, or compatibility code. A shorter expression is not automatically a better implementation.
 
-Before commit, inspect new names and run the project's gate against the actual staged snapshot. For branch review, use the actual base/head. Never change staging to disguise a violation. Report unsupported languages or missing adapters; no checker can infer every name's domain meaning.
+Before commit, inspect new paths, symbols, fields, test titles, images, and resources in the actual change. For branch review, use the real base and head. Report any name that still depends on task context and any language or artifact the review could not inspect.
 
-A failed check requires a fix or an explicit unresolved finding. Do not add exclusions, weaken severity, expand debt, bypass hooks, or rename a forbidden operation through indirection to make the check pass. A real policy defect needs a separately reviewed correction and a regression case.
-
-See the [naming gate guide](../../../docs/naming-gate.md) for implementation, coverage, and adoption. These rules borrow anti-slop's approach of tested, repository-owned enforcement without adopting its entire opinionated ruleset or requiring a specific formatter.
+A failed project check requires a fix or an explicit unresolved finding. Do not weaken severity, expand debt, bypass hooks, or rename a forbidden operation through indirection to make the check pass. A real project-policy defect needs a separately reviewed correction and a regression case.

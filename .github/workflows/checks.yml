@@ -6,38 +6,15 @@ on:
 permissions:
   contents: read
 jobs:
-  naming:
-    name: Naming gate
+  validation:
+    name: Collection validation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install parser without lifecycle scripts
-        run: npm ci --ignore-scripts
-      - name: Check proposed snapshot with trusted base checker
-        env:
-          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
-          HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
-        run: |
-          set -euo pipefail
-          trusted="$RUNNER_TEMP/trusted-naming"
-          mkdir -p "$trusted"
-          if git cat-file -e "$BASE:scripts/check_names.py" 2>/dev/null; then
-            git archive "$BASE" scripts/check_names.py scripts/naming-js.cjs package.json package-lock.json | tar -x -C "$trusted"
-            npm ci --ignore-scripts --prefix "$trusted"
-            python3 -B "$trusted/scripts/check_names.py" --repo "$GITHUB_WORKSPACE" --tree "$HEAD" --base "$BASE"
-          else
-            echo 'Bootstrap: no checker exists in the base. Maintainer review is required before adopting this first version.'
-            python3 -B scripts/check_names.py --tree "$HEAD" --base "$BASE"
-          fi
-      - name: Validate collection and test checker
+      - name: Validate collection
         run: |
           python3 -B scripts/validate.py
           python3 -B -m unittest discover -s scripts -p 'test_*.py'

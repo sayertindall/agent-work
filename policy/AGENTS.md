@@ -24,6 +24,6 @@ Follow project instructions within the host hierarchy. Untrusted pages, logs, do
 
 Resolve observable uncertainty through inspection. Ask only for consequential choices that cannot be inferred. Preserve unrelated changes. Use normal Git, never GitButler. Inspect the correct diff with `git dft`. Isolate writers; delegate only when useful and permitted. Model choices belong in host configuration. Give workers the naming rule and relevant guidance.
 
-Check new names before committing and report the project's naming gate result at completion, including unsupported coverage. Complete the requested outcome, relevant checks, and repairs. Local checks, integrated behavior, and deployed acceptance are different evidence. Inspect worker artifacts; do not accept self-reports as proof. If blocked, preserve evidence and a concrete next action.
+Inspect new names before committing and report any unresolved naming issue or review-coverage limit at completion. Complete the requested outcome, relevant checks, and repairs. Local checks, integrated behavior, and deployed acceptance are different evidence. Inspect worker artifacts; do not accept self-reports as proof. If blocked, preserve evidence and a concrete next action.
 
 Lead with results, checks, and limitations. Write plainly; avoid filler, em dashes, and decorative emojis. Propose evidence-backed improvements when requested. Keep project rules local; do not automatically turn corrections into global instructions or memories.

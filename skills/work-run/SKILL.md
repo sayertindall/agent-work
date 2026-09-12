@@ -11,7 +11,7 @@ As the single coordinator, establish a branch/worktree or clone appropriate to t
 
 Before concurrent work, retries, or a changed design decision, revisit the [principle index](../steady/references/principle-index.md) and read the applicable guidance before acting. Include relevant reference paths and section names in worker assignments; workers read them themselves.
 
-Apply [naming and code quality rules](../steady/references/rules.md) before introducing artifacts. Before commit and completion, inspect new names and run the project naming gate on the relevant snapshot; report failures and coverage limits.
+Apply [naming and code quality rules](../steady/references/rules.md) before introducing artifacts. Before commit and completion, inspect new names in the actual change and report unresolved naming issues or review-coverage limits.
 
 Execute to the plan's full acceptance criteria. Keep decisions and evidence in the plan at meaningful checkpoints, not after every tool call. If new evidence invalidates scope or design, record it and resolve the decision rather than implement the wrong plan. Continue independent authorized work while a real blocker remains.
 
