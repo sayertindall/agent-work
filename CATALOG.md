@@ -17,7 +17,7 @@ Use one entry point for the actual request. The following are canonical names, n
 | [review](skills/review/SKILL.md) | Bounded artifact assessment | No unsolicited fixes |
 | [open-code-review](skills/open-code-review/SKILL.md) | Configured OCR diff review | Preserve diff scope; validate findings and coverage |
 | [research](skills/research/SKILL.md) | Attributable external evidence | No automatic report files or installs |
-| [interface](skills/interface/SKILL.md) | UI design, implementation, review | Preserve requested mode and project language |
+| [interface](skills/interface/SKILL.md) | UI design, implementation, review; 12 conditional library guides | Preserve requested mode and project language |
 | [writing](skills/writing/SKILL.md) | Writing as a deliverable | Drafting is not sending |
 | [security](skills/security/SKILL.md) | Security boundaries and explicit reviews | No unrequested probes or access changes |
 | [performance](skills/performance/SKILL.md) | Measured performance work | No unsupported speedup claims |

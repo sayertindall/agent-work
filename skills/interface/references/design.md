@@ -9,3 +9,5 @@ Use spacing and type hierarchy to explain relationships. Make actions and conseq
 Use concrete product language. Errors should explain the problem and a useful next action. Do not expose internal agent terminology in product flows.
 
 Verify the changed flow in its consumption surface when implementation includes a runnable result. Check representative widths, content lengths, focus order, and relevant state transitions. Use measured contrast where reporting numerical compliance. Run appropriate project checks; visual approval is not a universal prerequisite for verification. If runtime access is unavailable, state what was assessed from source and what remains unverified.
+
+For visual direction and polish, load design-taste through the [interface library](library.md). Select the relevant domain guides for implementation detail. Use variant and break when the requested deliverable calls for comparison or component stress testing.

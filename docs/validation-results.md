@@ -39,3 +39,9 @@ Author walkthroughs covered default branch review, staged-only scope, and partia
 ## User-level installation
 
 The September 12 migration installed all 17 skills in the three hosts. Fresh Codex app-server discovery, Claude initialization, and the installed OMP discovery loader confirmed the expected catalog. Archive verification, an isolated restore of the actual archived files, and aliased reference checks passed. See [installation and recovery](installation.md) for scope and remaining behavioral acceptance limits. Earlier statements above about pending installation describe the pre-migration checks.
+
+## Interface reference library
+
+Imported all eleven Jakub Krehel skills at revision `267330e1adfc66a718fb65fa6918c1f06d0a689e`, plus the archived design-taste guide and all five of its references. All 64 imported files were checked against the source clone or archive. Two documented link repairs preserve the original hashes alongside installed hashes. The collection validator now checks imported integrity and refuses nested discoverable skill entrypoints. All 9 validator tests passed, including mutations that alter imported content or introduce a nested skill.
+
+Author walkthroughs checked a narrow typography fix, a request for the archived design-taste guidance, and a strict no-write UI branch review. The router selects the relevant references, preserves project constraints, and disallows fetches or scratch artifacts under no-write scope. These are author assessments, not independent model evaluations. Fresh host discovery was also checked after integration; the library is conditional content beneath Interface rather than a larger top-level skill catalog.

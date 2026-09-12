@@ -25,3 +25,7 @@ No claim is made that this collection matches every behavior of upstream Poteto 
 ## Open Code Review integration
 
 The [Open Code Review CLI](https://github.com/alibaba/open-code-review) and the user's project-local skill informed the new, independently rewritten CLI instructions. The source skill identifies Alibaba as author, version 1.0.0, and Apache-2.0 as its license. No source prose or implementation is vendored. The replacement uses the installed CLI and configuration, corrects staged-only scope assumptions, and treats partial coverage separately from successful process exit. CLI flags were checked against installed v1.12.0.
+
+## Interface library
+
+All eleven skills from [Jakub Krehel's collection](https://github.com/jakubkrehel/skills) at commit `267330e1adfc66a718fb65fa6918c1f06d0a689e` are included beneath Interface, together with the user's archived design-taste skill and its five references. Original guidance and upstream MIT attribution are preserved. Skill entrypoints become `GUIDE.md` so hosts do not discover duplicates; two documented link repairs fix a renamed entrypoint and identify a pre-existing missing brand reference. The [library router](../skills/interface/references/library.md) defines scope, permission, reporting, and design-system precedence. The source clone is at `~/Dev/agent-work-sources/jakubkrehel-skills`; updating it does not silently change the pinned installed copy.

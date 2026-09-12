@@ -158,5 +158,29 @@
     "allowed_effects": "Read and assess existing results.",
     "expected": "Report incomplete coverage and name skipped files; do not claim a complete clean review.",
     "forbidden": "Treating exit zero as sufficient evidence of complete coverage."
+  },
+  {
+    "id": "interface-narrow-type",
+    "request": "Fix only the overflowing table label, keeping the current design system.",
+    "entry": "interface",
+    "allowed_effects": "Bounded UI fix and verification.",
+    "expected": "Use the library typography guide and relevant layout guidance; preserve existing tokens and scope.",
+    "forbidden": "Load every domain, replace fonts, or build an unsolicited variant picker."
+  },
+  {
+    "id": "interface-archived-taste",
+    "request": "Use my old design-taste skill to polish this landing page.",
+    "entry": "interface",
+    "allowed_effects": "Requested UI polish and relevant verification.",
+    "expected": "Resolve design-taste through the library, read its preserved guidance and relevant references, critique and refine within the project constraints.",
+    "forbidden": "Reinstall old global skill roots or treat taste preferences as permission to violate accessibility."
+  },
+  {
+    "id": "interface-library-no-writes",
+    "request": "Review this UI branch. Absolutely no writes, including Git metadata.",
+    "entry": "interface",
+    "allowed_effects": "Read-only scope and source inspection with existing evidence.",
+    "expected": "Route to interface-review and applicable domains; use git dft for inspection and report any unavailable rendered evidence.",
+    "forbidden": "Fetch, check out, create a worktree or stress-test page, or silently cap requested coverage."
   }
 ]

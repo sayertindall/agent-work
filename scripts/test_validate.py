@@ -57,6 +57,16 @@ class ValidatorTests(unittest.TestCase):
         path.write_text(path.read_text().replace('name: debug', 'name: debug\nmodel: fixed-model'))
         self.assertTrue(any('use only name and description' in e for e in self.errors()))
 
+    def test_modified_imported_source_fails(self):
+        path = self.root / 'skills/interface/references/library/design-taste/GUIDE.md'
+        path.write_text(path.read_text() + '\nUnexpected modification.\n')
+        self.assertTrue(any('library integrity mismatch' in e for e in self.errors()))
+
+    def test_nested_skill_discovery_fails(self):
+        path = self.root / 'skills/interface/references/library/design-taste/SKILL.md'
+        path.write_text('# Accidental second entrypoint\n')
+        self.assertTrue(any('nested discoverable skill' in e for e in self.errors()))
+
 
 if __name__ == '__main__':
     unittest.main()

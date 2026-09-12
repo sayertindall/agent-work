@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate the portable skill collection without modifying it."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -17,6 +18,25 @@ def validate(root):
         'review', 'open-code-review', 'research', 'interface', 'writing', 'security', 'performance',
     }
     total_description_words = 0
+    library = root / 'skills/interface/references/library'
+    imported_paths = set()
+    try:
+        manifest = json.loads((library / 'manifest.json').read_text())
+        for item in manifest['files']:
+            path = (library / item['path']).resolve()
+            if not path.is_relative_to(library.resolve()) or path in imported_paths:
+                raise ValueError('invalid or duplicate imported path')
+            imported_paths.add(path)
+            if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != item['sha256']:
+                errors.append(f'interface library integrity mismatch: {item["path"]}')
+        actual = {p.resolve() for p in library.rglob('*') if p.is_file() and p != library / 'manifest.json'}
+        if actual != imported_paths:
+            errors.append('interface library manifest does not match its file inventory')
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'interface library manifest: {exc}')
+    for path in (root / 'skills').rglob('SKILL.md'):
+        if path.parent.parent != root / 'skills':
+            errors.append(f'nested discoverable skill: {path.relative_to(root)}')
     skill_paths = sorted((root / 'skills').glob('*/SKILL.md'))
     for path in skill_paths:
         text = path.read_text()
@@ -71,9 +91,9 @@ def validate(root):
             continue
         text = path.read_text()
         label = str(path.relative_to(root))
-        if re.search(r'\b(?:TODO|FIXME|TBD)\b', text):
+        if path.resolve() not in imported_paths and re.search(r'\b(?:TODO|FIXME|TBD)\b', text):
             errors.append(f'{label}: unfinished marker')
-        if '\u2014' in text:
+        if path.resolve() not in imported_paths and '\u2014' in text:
             errors.append(f'{label}: em dash conflicts with shared style policy')
         for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', text):
             target = target.strip('<>')

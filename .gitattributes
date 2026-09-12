@@ -1,0 +1,2 @@
+# Preserve harmless upstream trailing blank lines in the imported source library.
+skills/interface/references/library/** whitespace=-blank-at-eof
