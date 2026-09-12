@@ -66,16 +66,19 @@ def prepare(home, source):
             if prefix_hash not in {managed_hash, recorded.get(relative)}:
                 raise ValueError('local edits in managed policy; refusing to overwrite: ' + str(path))
             lines = suffix.splitlines(keepends=True)
-            if not lines or not lines[0].startswith('The canonical skill collection is '):
+            pointer_index = next((i for i, line in enumerate(lines) if line.strip()), None)
+            if pointer_index is None or not lines[pointer_index].startswith('The canonical skill collection is '):
                 raise ValueError('unrecognized source pointer; reconcile before updating: ' + str(path))
             # Only the managed pointer line changes; host preferences follow verbatim.
-            tail = ''.join(lines[1:])
+            leading = ''.join(lines[:pointer_index])
+            tail = ''.join(lines[pointer_index + 1:])
         else:
+            leading = '\n'
             tail = ''
         pointer = (f'The canonical skill collection is `{source}/skills`. Resolve skill symlinks before '
                    f'following relative references. Load `{source}/skills/steady/SKILL.md` '
                    'automatically for substantive work.\n')
-        desired = (policy + MARKER + pointer + tail).encode()
+        desired = (policy + MARKER + leading + pointer + tail).encode()
         if not path.exists() or path.read_bytes() != desired:
             changes.append((relative, 'file', desired))
         receipt['policies'][relative] = managed_hash

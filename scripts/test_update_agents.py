@@ -77,7 +77,7 @@ class UpdateAgentsTests(unittest.TestCase):
         for relative in updater.POLICIES:
             path = self.home / relative
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(policy + updater.MARKER + 'The canonical skill collection is old.\n\nKeep this preference.\n')
+            path.write_text(policy + updater.MARKER + '\nThe canonical skill collection is old.\n\nKeep this preference.\n')
         self.install()
         for relative in updater.POLICIES:
             self.assertTrue((self.home / relative).read_text().endswith('\nKeep this preference.\n'))
