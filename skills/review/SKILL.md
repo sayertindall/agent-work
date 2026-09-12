@@ -13,6 +13,8 @@ For Git code diffs, use [open-code-review](../open-code-review/SKILL.md) as the 
 
 Before assessing maintainability or test adequacy, use the [principle index](../steady/references/principle-index.md) to read reader-effort or behavior-test guidance as applicable. Principles support evidence-backed findings, not preference-only objections.
 
+Read [naming and code quality rules](../steady/references/rules.md) when reviewing new paths, symbols, or resources. Assess semantic names as well as the gate result. Existing violations do not justify new ones; preserve immutable and external contracts.
+
 Prioritize defects with a concrete trigger and observable impact. Check correctness, compatibility, failure handling, and maintainability where relevant. Separate introduced defects, regressions, and pre-existing issues. Prefer evidence to style preferences. Load [security](../security/SKILL.md) or [interface](../interface/SKILL.md) only when that review surface is requested or material.
 
 Use read-only inspection when required; tests can write caches or fixtures. Do not fix a finding during a review-only request. Report each actionable finding with severity, location, trigger, consequence, and supporting evidence. Report coverage and unverified surfaces even when no findings remain.

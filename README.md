@@ -13,6 +13,10 @@ One workflow and skill collection for Claude Code, Codex, and OMP. Small tasks s
 
 The collection is installed at user level in Claude Code, Codex, and OMP. Old user skills and plugin packages are archived under `~/.skills-archive/20260912T173619Z`, with a verified one-command restore. Project-local files were not changed. See [installation and recovery](docs/installation.md).
 
+## Update your agents
+
+Run `python3 -B ~/Dev/agent-work/scripts/update_agents.py` to synchronize Claude Code, Codex, and OMP from the selected checkout. Add `--check` for read-only inspection. See [installation](docs/installation.md) for backups, preserved preferences, and conflict handling.
+
 ## Examples
 
 Say `Implement this export and verify it in the app`; the agent drives Steady, including its plan lifecycle. Say `Use work-add to capture this idea` to save a draft without implementing it. Use `work-plan` to prepare it, `work-run` to execute authorized work, `work-status` for a read-only report, and `work-sync` to reconcile completion.

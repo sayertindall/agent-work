@@ -11,4 +11,6 @@ Before choosing a model, validation boundary, or alternative, use the [principle
 
 Compare alternatives only where the choice is unsettled and meaningful. Evaluate consumer experience, maintainability, failure modes, and migration cost. Use a bounded prototype when evidence would settle a consequential question and writes are authorized.
 
+When defining names or contracts, read [naming rules](../steady/references/rules.md) before introducing them.
+
 Specify ownership, inputs/outputs, state transitions, errors, and integration boundaries at the detail needed for implementation. Retain compatibility when external users or deployment sequencing require it. Identify the verification path and any unresolved decision. A design request ends with a proposal; implementation requires its own authorization.

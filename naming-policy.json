@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "task_prefixes": ["R", "K", "S"],
+  "allowed_terms": [],
+  "baseline": [],
+  "immutable": []
+}
