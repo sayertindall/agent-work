@@ -5,7 +5,7 @@ Use one entry point for the actual request. The following are canonical names, n
 | Skill | Purpose | Boundary |
 | --- | --- | --- |
 | [steady](skills/steady/SKILL.md) | Proportionate engineering workflow | Skip ordinary questions and trivial edits |
-| [work-init](skills/work-init/SKILL.md) | Initialize durable tracking | Only when setup is requested |
+| [work-init](skills/work-init/SKILL.md) | Initialize durable tracking | No mutation for read-only tasks |
 | [work-add](skills/work-add/SKILL.md) | Capture an idea | No implementation |
 | [work-plan](skills/work-plan/SKILL.md) | Make a durable plan actionable | Readiness does not authorize execution |
 | [work-run](skills/work-run/SKILL.md) | Execute an authorized plan | Honor ownership, dependencies, and acceptance |

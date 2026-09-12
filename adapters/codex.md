@@ -11,3 +11,5 @@ Use available browser or native-app tools for the actual consumption surface. Us
 Keep current model settings outside this repository. Do not import model IDs or obsolete tool aliases from pstack. A native goal is distinct from a durable plan; create one only when requested or required by the host.
 
 Activation acceptance: inspect the skill catalog in a fresh session, confirm one canonical entry per name and resolvable references, reconcile global policy and legacy pstack hooks, then exercise the shared cases. This repository's structural validation alone is not live-host acceptance.
+
+The user-level migration is now installed. See [installation and recovery](../docs/installation.md) for the measured discovery results and remaining behavioral checks.

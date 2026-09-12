@@ -1,6 +1,6 @@
-# Backup and activation: next stage
+# Backup and activation
 
-Building this repository does not activate it. Do not run this procedure unless the user has requested the backup and installation stage. No existing skill, plugin, hook, global policy, or memory should be changed as a side effect of validating this repository.
+The September 12 user-level migration is recorded in [installation and recovery](installation.md). Building or validating this repository alone does not activate it. Do not run this procedure unless the user has requested the backup and installation stage. No existing skill, plugin, hook, global policy, or memory should be changed as a side effect of validating this repository.
 
 ## Establish the actual installation
 

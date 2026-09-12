@@ -35,3 +35,7 @@ Added the seventeenth skill, `open-code-review`, and connected it to the shared 
 The collection validator and all 7 validator regression tests passed after the addition. A disposable Git fixture confirmed that `git dft --cached` selects staged changes only, while `ocr review --preview --audience agent` selects staged, unstaged, and untracked files. Preview did not perform an LLM review.
 
 Author walkthroughs covered default branch review, staged-only scope, and partial results despite exit zero. The instructions resolve the actual branch baseline, reject widening a staged-only request, and leave skipped coverage incomplete. These are author assessments, not independent agent evaluations. Live discovery in all three hosts and a full provider-backed OCR review remain untested.
+
+## User-level installation
+
+The September 12 migration installed all 17 skills in the three hosts. Fresh Codex app-server discovery, Claude initialization, and the installed OMP discovery loader confirmed the expected catalog. Archive verification, an isolated restore of the actual archived files, and aliased reference checks passed. See [installation and recovery](installation.md) for scope and remaining behavioral acceptance limits. Earlier statements above about pending installation describe the pre-migration checks.

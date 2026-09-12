@@ -10,7 +10,7 @@ One workflow and skill collection for Claude Code, Codex, and OMP. Small tasks s
 - [Host setup](adapters/README.md) explains how to expose the same source in each host.
 - [Validation](docs/validation.md) separates structural checks, scenario evaluation, and live-host acceptance.
 
-The collection is built here but is not installed into your existing agent configuration. The project-local Open Code Review skill has moved into this collection. Other existing skills, plugins, hooks, and global instructions have not been replaced. Backup and activation are a separate stage described in [migration](docs/migration.md).
+The collection is installed at user level in Claude Code, Codex, and OMP. Old user skills and plugin packages are archived under `~/.skills-archive/20260912T173619Z`, with a verified one-command restore. Project-local files were not changed. See [installation and recovery](docs/installation.md).
 
 ## Examples
 

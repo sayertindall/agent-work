@@ -11,3 +11,5 @@ Use available read/search/edit/shell tools directly for ordinary work. Use the c
 Recurring continuation requires an explicitly available scheduler and user authorization. A background worker is not an indefinite monitor. Inspect its real state before resuming or replacing it.
 
 Activation acceptance: one canonical entry per skill, no competing legacy pstack startup mandate, global policy reconciled, relative references resolved, and the shared evaluation cases exercised in a fresh session. Those live checks are deferred until installation.
+
+The user-level migration is now installed. See [installation and recovery](../docs/installation.md) for the measured discovery results and remaining behavioral checks.
